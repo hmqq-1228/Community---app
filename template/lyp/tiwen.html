@@ -1,0 +1,54 @@
+
+    <style>
+        *{
+            font-family: "Microsoft YaHei", '微软雅黑';
+        }
+        .content{
+            height: 1366px;
+            background-color:#F0EFF5;
+        }
+        .item{
+            border: 0;!important;
+        }
+        .input-label{
+            width: 24%;
+        }
+        .content .button{
+            width: 80%;
+            margin: 0 auto;
+            background-color: #EB8D0E;
+            color: #fff;
+        }
+    </style>
+<div class="bar bar-header bar-positive">
+    <button class="button button-clear" ng-click="back()">
+        <i class="icon ion-ios-arrow-back"></i>
+    </button>
+    <h1 class="title">小区问问</h1>
+</div>
+<div class="content has-header">
+    <div class="list">
+        <a class="item item-divider">
+        </a>
+        <label class="item item-input">
+            <span class="input-label">标题：</span>
+            <input type="text"  placeholder="请输入标题"/>
+        </label>
+        <label class="item item-input">
+            <span class="input-label">心券：</span>
+            <input type="text" placeholder="请输入心券数量"/>
+        </label>
+    </div>
+
+    <div class="list">
+        <a class="item">
+            内容：
+        </a>
+        <label class="item item-input">
+            <textarea rows="5">请输入内容</textarea>
+        </label>
+    </div>
+
+    <button class="button button-block">确认</button>
+
+</div>

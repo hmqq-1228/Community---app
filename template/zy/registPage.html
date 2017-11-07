@@ -1,0 +1,63 @@
+	<style>
+			.input-label {
+    display: table;
+    padding: 7px 10px 7px 0px;
+    max-width: 200px;
+    width: 21%;
+    color: #444;
+    font-size: 16px;
+}
+.item p.mycolor{
+	color:#296fe9
+}
+.item-body {
+    overflow: auto;
+    padding: 0px;
+    text-overflow: inherit;
+    white-space: normal;
+}
+.list-inset {
+    overflow: hidden;
+    margin: -4px 10px;
+    border-radius: 2px;
+    background-color: #fff;
+}
+		</style>
+	<div ng-controller="regCtrl">
+		<div class="bar bar-header bar-positive">
+			<button class="button button-clear" ng-click="back()">
+				<i class="icon ion-ios-arrow-back"></i>
+				
+			</button><h1 class="title">注册</h1>
+		</div>
+			
+			<div class="content has-footer has-header scroll scroll-content" style="overflow-y: scroll;">
+			<div class="list">
+				
+	           <label class="item item-input">
+					<span class="input-label">昵&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;称：</span>
+					<input type="text" placeholder="请输入昵称"/>
+				</label>
+                <label class="item item-input">
+					<span class="input-label">手机号码：</span>
+					<input type="text" placeholder="请输入手机号" />
+				</label>
+				<label class="item item-input">
+					<span class="input-label">密&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;码：</span>
+					<input type="password" placeholder="请输入密码"/>
+				</label>
+                <label class="item item-input">
+					<span class="input-label">密&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;码：</span>
+					<input type="password" placeholder="请确认密码" />
+				</label>
+			</div>
+	<div class="list list-inset">
+	<a class="button button-block button-energized" href="#/regs">下一步</a>
+	
+	</div>
+	<div class="item item-body">
+		<p class="text-center">注册或使用账号登录即视为同意</p>
+		<p class="text-center mycolor">《i的小区用户协议》</p>
+	</div>
+	</div>
+</div>

@@ -1,0 +1,73 @@
+<style>
+	/*主页面*/
+			body {
+				background: #f0eff5;
+			}
+			.text {
+				color: #FFFFFF;
+				font-size: 12px;
+			}
+			a{
+				text-decoration: none;
+			}
+			.box {
+				background: #3A7CEB;
+				width: 100%;
+				height: 134px;
+				padding-top: 20px;
+				text-align: center;
+			}
+
+			ul {
+				width:100%;
+				height: 200px;
+				background: #fff;
+			}
+			li {
+				float: left;
+				padding: 23px 18px;
+				text-align: center;
+			}
+						li img {
+							width: 20px;
+							height: 20px;
+						}
+						li span{
+							color: #888888;
+							font-size: 12px;
+
+						}
+</style>
+
+		<div class="bar bar-header bar-positive">
+			<button class="button button-clear" ng-click="back()">
+				<i class="icon ion-ios-arrow-back"></i>
+			</button>
+			<h1 class="title">个人中心</h1>
+		</div>
+		<div class="content has-header scroll scroll-content" style="overflow-y: scroll;">
+			<div class="box">
+				<img src="img/wy/1.png" style="width:50px ;height: 50px;" /><br />
+				<p class="text">一朵阳光花</p>
+				<p class="text">15638816863</p>
+			</div>
+			<div class="list">
+				<a class="item item-icon-right">
+
+					i的社区
+
+					<i class="icon ion-ios-arrow-forward my-color"></i>
+				</a>
+			</div>
+
+			<ul class="list padding">
+				<li><a href=""><img src="img/wy/2.png" alt="" /><br /><span>个人资料</span></a></li>
+				<li><a href="#/imoney"><img src="img/wy/3.png" alt="" /><br /><span>i的钱包</span></a></li>
+				<li><a href="#/iorder"><img src="img/wy/4.png" alt="" /><br /><span>i的订单</span></a></li>
+				<li><a href="#/winrecord"><img src="img/wy/5.png" alt="" /><br /><span>i的中奖纪录</span></a></li>
+				<li><a href="#/lifehelp"><img src="img/wy/6.png" alt="" /><br /><span>i的生活助理</span></a></li>
+				<li><a href="#/pwd"><img src="img/wy/7.png" alt="" /><br /><span>设置</span></a></li>
+				<li><a href="#/village"><img src="img/wy/8.png" alt="" /><br /><span>i的评价</span></a></li>
+				<li><a href="#/idecide"><img src="img/wy/9.png" alt="" /><br /><span>i的家i做主</span></a></li>
+			</ul>
+		</div>

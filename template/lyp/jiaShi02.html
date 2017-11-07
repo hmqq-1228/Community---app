@@ -1,0 +1,105 @@
+
+    <style>
+        .bar.mycolor{
+            background-color:#296fe9;
+        }
+
+        body{
+            background-color:#f0eff5;
+        }
+        .content{
+            margin-top:10px;
+        }
+
+        .item p{
+            height:40px;
+            line-height:40px;
+
+        }
+        .item span{
+            font-size:12px;
+            color:#999;
+        }
+        .item .myC{
+            color:#FF3B30;
+            font-size:13px;
+        }
+        .item div .time{
+            width:50px;
+            height:20px;
+            line-height:20px;
+            float:right;
+        }
+        .item button{
+            background-color:#fff;
+            width:60px;
+            float:right;
+            border:0.5px solid #999;
+            border-radius:5px;
+
+        }
+        .myfoot{
+            position:fixed;
+            bottom:0;
+        }
+
+        .foot{
+            width:100%;
+            border:none;
+        }
+
+    </style>
+
+<div class = "bar bar-header bar-royal mycolor" ng-click="back()">
+    <button class = "button button-clear">
+        <i class = "icon ion-ios-arrow-back "></i>
+    </button>
+    <h3 class = "title">小区家事</h3>
+</div>
+<div class = 'content has-header  has-footer scroll scroll-content' style="overflow-y:scroll ;">
+    <ul class = "list">
+        <li class = "item item-avatar">
+            <img src="img/lyp/15-1.jpg" alt="" />
+            <p>小星星</p>
+            <h2>小区附近哪家好吃？</h2>
+            <div>
+                <span>哪家的又好吃又实惠，朋友们推荐一下</span>
+                <div class = "time"><span>回答2&nbsp</span><i class = "ion-chatbox-working myC"></i></div>
+            </div>
+        </li>
+        <li class = "item item-avatar">
+            <img src="img/lyp/15-1.jpg" alt="" style="width:30px;height:30px;left:30px;"/>
+            <p>安妮宝贝<span style="float:right;">今天&nbsp 10:20 </span></p>
+
+            <h3>马路对面有一家渝香四川菜。</h3>
+            <button>回复</button>
+        </li>
+        <li class = "item item-avatar">
+            <img src="img/lyp/15-1.jpg" alt="" style="width:30px;height:30px;left:30px;"/>
+            <p>安妮宝贝<span style="float:right;">今天&nbsp 10:20 </span></p>
+
+            <h3>马路对面有一家渝香四川菜。</h3>
+            <button>回复</button>
+        </li>
+    </ul>
+</div>
+<div class="bar bar-footer">
+
+    <div class="list myfoot">
+
+        <div class="item item-input-inset foot">
+            <label class="item-input-wrapper">
+                <input type="text" >
+                <i class = "icon ion-happy-outline placeholder-icon" style="padding-left:200px;"></i>
+            </label>
+            <button class="button button-small">
+                发表
+            </button>
+            <button class = "button button-small">
+                取消
+            </button>
+        </div>
+
+    </div>
+
+</div>

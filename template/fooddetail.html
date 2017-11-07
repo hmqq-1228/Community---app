@@ -1,0 +1,61 @@
+<div>
+    <div class="bar bar-header bar-positive">
+        <button class="button icon ion-ios-arrow-back" ng-click="back()"></button>
+        <h1 class="title">订餐服务</h1>
+    </div>
+    <ion-content class="has-header">
+        <div class="list">
+            <div class="item item-thumbnail-left">
+                <img src="img/chj31.jpg" />
+                <h3>比格自助披萨</h3>
+                <p ng-click="showConfirm()" class="item-icon-right">
+                    0373-1234567
+                    <i class="icon ion-ios-telephone"></i>
+                </p>
+                <p>地址：农业路与花园路招银大厦</p>
+                <p>经营：披萨、汉堡、炸鸡、冰淇淋、奶茶、咖啡、牛排</p>
+            </div>
+            <div class="row text-center">
+                <div class="col" ng-click="tab(1)">图文介绍</div>
+                <div class="col" ng-click="tab(2)">店铺商品</div>
+                <div class="col" ng-click="tab(3)">大家评价</div>
+            </div>
+            <div class="item item-body">
+                <img ng-show="tab1" class="full-image" src="img/chj32.jpg" alt="">
+                <p ng-show="tab1">
+                    This is a "Facebook" styled Card. The header is created from a Thumbnail List item,
+                    the content is from a card-body consisting of an image and paragraph text. The footer
+                    consists of tabs, icons aligned left, within the card-footer.
+                </p>
+                <img ng-show="tab2" class="full-image" src="img/chj31.jpg" alt="">
+                
+                <div ng-if="tab3" class="list">
+		            <li class="item item-avatar item-icon-right item-text-wrap">
+			    		<img src="img/fs/1.png">
+			    		<h2>面膜用着特别棒，五星好评！！</h2>
+			    		<p>
+			      			<a class="subdued">今天</a>
+			      			<a class="subdued">10:20</a>
+			    		</p>
+			    
+			  		</li>
+				   <li class="item item-avatar item-icon-right item-text-wrap">
+				    	<img src="img/fs/2.png">
+				    	<h2>用了好多年了，相信百雀羚的品味，会一直用下去的</h2>
+				    	<p>
+				      	<a class="subdued">今天</a>
+				      	<a class="subdued">11:18</a>
+				    	</p>
+				  </li>
+				   <li class="item item-avatar item-icon-right item-text-wrap">
+				    	<img src="img/fs/3.png">
+				    	<h2>爽肤水用着特别舒服，赞一个</h2>
+				    	<p>
+				      		<a class="subdued">2016-02-18</a>
+				    	</p>			   
+				  </li>                  
+                </div>
+            </div>
+        </div>
+    </ion-content>
+</div>

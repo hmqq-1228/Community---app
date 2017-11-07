@@ -1,0 +1,132 @@
+﻿body {
+    background: #f0eff5;
+}
+.text {
+    color: #FFFFFF;
+    font-size: 12px;
+}
+a{
+    text-decoration: none;
+}
+.box {
+    background: #3A7CEB;
+    width: 100%;
+    height: 134px;
+    padding-top: 20px;
+    text-align: center;
+}
+
+ul {
+    width:100%;
+    height: 200px;
+    background: #fff;
+}
+li {
+    float: left;
+    padding: 23px 18px;
+    text-align: center;
+}
+li img {
+    width: 20px;
+    height: 20px;
+}
+li span{
+    color: #888888;
+    font-size: 12px;
+
+}
+/*我的钱*/
+body{
+    background-color: #F0EFF5;
+}
+.itemmoney{
+    background-color: #fff;
+    margin-top: 10px;
+}
+.outcircle{
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    background-color: #FEDFBC;
+    margin: 0 auto;
+    position: relative;
+}
+.incircle{
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    background-color: #FD9927;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 10px;
+    text-align: center;
+    color: #fff;
+    line-height: 65px;
+}
+.incircle span{
+    font-size: 27px;
+}
+.iheart{
+    height: 14px;
+    text-align: center;
+}
+.yue{
+    height: 14px;
+    text-align: right;
+}
+.change{
+    width: 90%;
+    margin: 0 auto;
+}
+.change .item{
+    margin-top: 0;
+    border-left: none;
+    border-right: none;
+}
+.change .item span{
+    color:#FD9927 ;
+}
+.item-input-wrapper{
+    background-color: #fff;
+}
+.item-input-inset .item-input-wrapper input {
+    padding-left: 4px;
+    height: 29px;
+    background: #eee;
+    line-height: 18px;
+    text-align: center;
+}
+.change .button-block{
+    background-color:#FD9927;
+    width: 50%;
+    margin: 15px auto 0;
+}
+/*我的中奖纪录*/
+.bg{
+    background-color: #fff;
+}
+.tabs-top > .tabs{
+    top: 1px;
+}
+.tabs-top.tabs-striped {
+    height: 17px;
+}
+.item-thumbnail-left{
+    padding-top: 20px;
+}
+.tabs-striped.tabs-background-positive .tabs {
+    background-color: #fff;
+    background-image: none;
+}
+.tabs-striped.tabs-color-light .tab-item{
+    color:#434343;
+}
+.tabs-striped.tabs-color-light .tab-item.active{
+    color:#00f;
+    border: 0 solid #00f;
+}
+.tabs-background-positive .tabs, .tabs-background-positive > .tabs{
+    border-color:#ddd;
+}

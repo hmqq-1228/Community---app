@@ -1,0 +1,109 @@
+<style>
+	/*我的钱*/
+			body{
+				background-color: #F0EFF5;
+			}
+			.imoney-content .itemmoney{
+				background-color: #fff;
+				margin-top: 10px;
+			}
+			.imoney-content .outcircle{
+				width: 72px;
+				height: 72px;
+				border-radius: 50%;
+				background-color: #FEDFBC;
+				margin: 0 auto;
+				position: relative;
+			}
+			.imoney-content .incircle{
+				width: 65px;
+				height: 65px;
+				border-radius: 50%;
+				background-color: #FD9927;
+				position: absolute;
+				left: 50%;
+				top: 50%;
+				transform: translate(-50%,-50%);
+				font-size: 10px;
+				text-align: center;
+				color: #fff;
+				line-height: 65px;
+			}
+			.imoney-content .incircle span{
+				font-size: 27px;
+			}
+			.iheart{
+				height: 14px;
+				text-align: center;
+			}
+			.imoney-content .yue{
+				height: 14px;
+				text-align: right;
+			}
+			.change{
+				width: 90%;
+				margin: 0 auto;
+			}
+			.imoney-content .change .item{
+				margin-top: 0;
+				border-left: none;
+				border-right: none;
+			}
+			.imoney-content .change .item span{
+				color:#FD9927 ;
+			}
+			.imoney-content .item-input-wrapper{
+				background-color: #fff;
+			}
+			.imoney-content .item-input-inset .item-input-wrapper input {
+				padding-left: 4px;
+				height: 29px;
+				background: #eee;
+				line-height: 18px;
+				text-align: center;
+			}
+			.imoney-content .change .button-block{
+				background-color:#FD9927;
+				width: 50%;
+				margin: 15px auto 0;
+			}
+</style>
+
+<div>
+<div class="bar bar-header bar-positive">
+        <button class="button icon ion-ios-arrow-back button-clear" ng-click="back()"></button>
+        <h1 class="title">i的钱包</h1>
+    </div>
+    <ion-content class="has-header imoney-content">
+        <div class="list">
+            <div class="item itemmoney">
+                <div class="outcircle">
+                    <div class="incircle"><span>{{yuheart}}</span>个</div>
+                </div>
+                <div class="iheart">当前i心卷</div>
+                <div class="yue">余额<span>{{yue}}</span>元</div>
+            </div>
+            <div class="item itemmoney">
+                <div class="list change">
+                    <div class="item" style="border-top:none">
+                        i心劵兑换
+                        <span>(1i心劵=1元)</span>
+                    </div>
+                    <div class="item item-input-inset">
+                        I心劵&nbsp;&nbsp;
+                        <label class="item-input-wrapper">
+                            <input type="text" placeholder="请输入I心劵数量" ng-model="inum">
+                        </label>
+                    </div>
+                    <div class="item" style="">
+                        现金&nbsp;&nbsp;&nbsp;{{inum}}
+                    </div>
+                    <button class="button button-block button-positive" ng-click="change(inum)">
+                        兑换
+                    </button>
+                </div>
+
+            </div>
+        </div>
+    </ion-content>
+</div>

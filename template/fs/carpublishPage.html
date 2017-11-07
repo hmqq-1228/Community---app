@@ -1,0 +1,38 @@
+<style>
+			div.list label.item.item-input span.input-label{
+				width: 15%;
+			}
+			button.button.button-block.button-energized{
+				background-color: orange;
+			}
+			div.content{
+				background-color: #f0eff5;
+				}
+</style>
+<div>
+	<!--header部分-->
+		<div class="bar bar-header bar-positive">
+			<button class="button button-clear" ng-click="back()">
+				<i class="icon ion-ios-arrow-left"></i>
+			</button>
+			<h1 class="title">我要发布</h1>
+		</div>
+		<!--content部分-->
+		<div class="content has-header scroll scroll-content" >
+			<div class="list padding-top">
+				
+			  <label class="item item-input">
+			    <span class="input-label">电话:</span>
+			    <input type="text"  placeholder="请输入电话">
+			  </label>
+			  <label class="item item-input">
+			    <span class="input-label">内容:</span>
+			    <input type="password"  placeholder="请输入内容">
+			  </label>
+			 
+			</div>
+			<div class="padding">
+			<button class="button button-block button-energized">确认</button>
+			</div>
+		</div>
+</div>

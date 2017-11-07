@@ -1,0 +1,136 @@
+myApp.config(function($stateProvider,$urlRouterProvider,$ionicConfigProvider){
+        $stateProvider
+            .state("list",{url:"/list",
+                templateUrl:"template/listPage.html"})
+            .state("message",{url:"/message",
+                templateUrl:"template/messagePage.html"})
+            .state("clothesdetail",{url:"/clothesdetail",
+                templateUrl:"template/clothesdetailPage.html"})
+            .state("more",{url:"/more",
+                templateUrl:"template/morePage.html"})
+            .state("clothes",{url:"/clothes",
+                templateUrl:"template/clothesPage.html"})
+            .state("expresscheck",{url:"/expresscheck",
+                templateUrl:"template/expresscheckPage.html"})
+            .state("check",{url:"/check",
+                templateUrl:"template/checkPage.html"})
+            .state("fooddetail",{url:"/fooddetail",
+                templateUrl:"template/fooddetail.html"})
+            .state("tabs",{url:"/tabs",
+                templateUrl:"template/tabsPage.html"})
+            .state("tabs.myhome",{url:"/myhome",
+                views:{"myhome":{templateUrl:"template/homechjPage.html"}}})
+            .state("tabs.money",{url:"/money",
+                views:{"money":{templateUrl:"template/moneyPage.html"}}})
+            .state("tabs.person",{url:"/person",
+                views:{"person":{templateUrl:"template/personPage.html"}}})
+            .state("tabs.buy",{url:"/buy",
+                views:{"buy":{templateUrl:"template/buyPage.html"}}})
+            .state("tabs.smallperson",{url:"/smallperson",
+                views:{"smallperson":{templateUrl:"template/smallpersonPage.html"}}})
+            
+        //fs
+            .state("secondhand",{url:"/secondhand",templateUrl:"template/fs/secondhandPage.html"})
+			.state("secondhandpublish",{url:"/secondhandpublish",templateUrl:"template/fs/secondhandpublishPage.html"})
+			.state("community",{url:"/community",templateUrl:"template/fs/communityPage.html"})
+			.state("hospitaldetails",{url:"/hospitaldetails",templateUrl:"template/fs/hospitaldetailsPage.html"})
+			.state("sharecar",{url:"/sharecar",templateUrl:"template/fs/sharecarPage.html"})
+			.state("carpublish",{url:"/carpublish",templateUrl:"template/fs/carpublishPage.html"})
+			.state("saledetail",{url:"/saledetail",templateUrl:"template/fs/saledetailPage.html"})
+        
+        //lyp
+			.state("niliao",{
+                url:"/niliao",
+               templateUrl:"template/lyp/niliaoPage.html"})
+            .state("gengduo",{
+                url:"/gengduo",
+                templateUrl:"template/lyp/gengduoPage.html"})
+            .state("neirong",{
+                url:"/neirong",
+                templateUrl:"template/lyp/neirongPage.html"})
+            .state("dingcan",{
+                url:"/dingcan",
+                templateUrl:"template/lyp/dingcanPage.html"})
+            .state("morelyp",{
+                url:"/morelyp",
+                templateUrl:"template/lyp/morelyp.html"})
+            .state("fuwu",{
+                url:"/fuwu",
+                templateUrl:"template/lyp/fuWu.html"})
+            .state("wenwen",{
+                url:"/wenwen",
+                templateUrl:"template/lyp/wenwen.html"})
+            .state("tiwen",{
+                url:"/tiwen",
+                templateUrl:"template/lyp/tiwen.html"})
+            .state("tongGao",{
+                url:"/tongGao",
+                templateUrl:"template/lyp/tongGao.html"})
+            .state("tongGao2",{
+                url:"/tongGao2",
+                templateUrl:"template/lyp/tongGao2.html"})
+            .state("weiXiu",{
+                url:"/weiXiu",
+                templateUrl:"template/lyp/weiXiu.html"})
+            .state("jiaShi",{
+                url:"/jiaShi",
+                templateUrl:"template/lyp/jiaShi.html"})
+            .state("jiaShi2",{
+                url:"/jiaShi2",
+                templateUrl:"template/lyp/jiaShi02.html"})
+            .state("jinXuan",{
+                url:"/jinXuan",
+                templateUrl:"template/lyp/jinXuan.html"})
+            .state("jinXuan02",{
+                url:"/jinXuan02",
+                templateUrl:"template/lyp/jinXuan02.html"})
+            .state("jinXuan03",{
+                url:"/jinXuan03",
+                templateUrl:"template/lyp/jinXuan03.html"})
+    	
+        //zy
+			.state("find",{url:"/find",templateUrl:"template/zy/findPage.html"})
+			.state("regist",{url:"/regist",templateUrl:"template/zy/registPage.html"})
+			.state("show",{url:"/show",templateUrl:"template/zy/showPage.html"})
+			.state("change",{url:"/change",templateUrl:"template/zy/changePage.html"})
+			.state("login",{url:"/login",templateUrl:"template/zy/loginPage.html"})
+			.state("regs",{url:"/regs",templateUrl:"template/zy/registPage2.html"})
+			.state("choose",{url:"/choose",templateUrl:"template/zy/choosePage.html"})
+			.state("home",{url:"/home",templateUrl:"template/zy/homePage.html"})
+			.state("provice",{url:"/provice",templateUrl:"template/zy/provicePage.html"})
+			.state("citys",{url:"/citys",templateUrl:"template/zy/cityPage2.html"})
+            .state("area",{url:"/area",templateUrl:"template/zy/areaPage.html"})
+    
+        //wy
+
+//			.state({name:"personC",url:"/personC",templateUrl:"template/wy/personC.html"})
+            .state({name:"imoney",url:"/imoney",templateUrl:"template/wy/imoney.html"})
+            .state({name:"winrecord",url:"/winrecord",templateUrl:"template/wy/winrecord.html"})
+            .state({name:"iorder",url:"/iorder",templateUrl:"template/wy/i-order.html"})
+            .state({name:"lifehelp",url:"/lifehelp",templateUrl:"template/wy/life-help.html"})
+            .state({name:"idecide",url:"/idecide",templateUrl:"template/wy/i-decide.html"})
+            .state({name:"village",url:"/village",templateUrl:"template/wy/village.html"})
+            .state({name:"pwd",url:"/pwd",templateUrl:"template/wy/ni_name_pwd.html"})
+            .state({name:"orderdetail",url:"/orderdetail",templateUrl:"template/wy/order-detail.html"})
+            .state({name:"villagequestion",url:"/villagequestion",templateUrl:"template/wy/village-question.html"})
+            .state({name:"contentsun",url:"/contentsun",templateUrl:"template/wy/content_sun.html"})
+            .state({name:"winrecord1",url:"/winrecord1",templateUrl:"template/wy/winrecord1.html"})
+            .state({name:"village1",url:"/village1",templateUrl:"template/wy/village1.html"})
+
+    
+        $urlRouterProvider.otherwise('/tabs/smallperson')
+        
+        
+        // tab在安卓置顶的兼容
+        $ionicConfigProvider.platform.ios.tabs.style('standard'); 
+		$ionicConfigProvider.platform.ios.tabs.position('bottom');
+		$ionicConfigProvider.platform.android.tabs.style('standard');
+		$ionicConfigProvider.platform.android.tabs.position('bottom');
+		$ionicConfigProvider.platform.ios.navBar.alignTitle('center'); 
+		$ionicConfigProvider.platform.android.navBar.alignTitle('center');
+		$ionicConfigProvider.platform.ios.backButton.previousTitleText('').icon('ion-ios-arrow-thin-left');
+		$ionicConfigProvider.platform.android.backButton.previousTitleText('').icon('ion-android-arrow-back');            
+		$ionicConfigProvider.platform.ios.views.transition('ios'); 
+		$ionicConfigProvider.platform.android.views.transition('android');
+    })
+

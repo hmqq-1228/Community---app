@@ -1,0 +1,87 @@
+<style>
+		a{
+			text-decoration: none;
+			color:#000;
+		}
+		ul.one{
+			width: 100%;
+			height: 240px;
+		}
+		ul.one li{
+			float: left;
+			box-sizing: border-box;
+			padding-top: 10px;
+			width: 25%;
+			height: 120px;
+			/*line-height: 176px;*/
+			text-align: center;
+		}
+		ul.one li img{
+			width: 60px;
+			height: 60px;
+		}
+</style>
+<ion-view>
+	<!--header部分-->
+		<div class="bar bar-header bar-positive">
+			<button class="button button-clear" ng-click="back()">
+				<i class="icon ion-ios-arrow-left"></i>
+			</button>
+			<h1 class="title">小区便民</h1>
+		</div>
+		<!--content部分-->
+		<div class="content has-header has-tabs scroll scroll-content" style="overflow-y: scroll;">
+			
+			<div class="item item-image">
+				<img src="img/fs/10.png">
+			</div>
+			<div class="list">
+			<ul class="one">
+			  <li><a href="#/community"><img src="img/fs/11.png"></a><br/>社区医疗</li>
+			  <li><img src="img/fs/12.png"><br/>超市送货</li>
+			  <li><img src="img/fs/13.png"><br/>房屋租赁</li>
+			  <li><img src="img/fs/14.png"><br/>社区民警</li>	
+			  <li><a href="#/secondhand"><img src="img/fs/15.png"></a><br/>二手置换</li>	
+			  <li><a href="#/sharecar"><img src="img/fs/16.png"></a><br/>小区拼车</li>	
+			  <li><img src="img/fs/17.png"><br/>保险理赔</li>	
+			  <li><img src="img/fs/18.png"><br/>实用查询</li>	
+			</ul>
+			<div class="item item-divider"></div>
+			<h4 class="title">上门服务</h4>
+			<ul class="one">
+			  <li><img src="img/fs/19.png"><br/>上门家政</li>
+			  <li><img src="img/fs/20.png"><br/>衣物干洗</li>
+			  <li><img src="img/fs/21.png"><br/>家电维修</li>
+			  <li><img src="img/fs/22.png"><br/>收发快递</li>	
+			  <li><img src="img/fs/23.png"><br/>美容美甲</li>	
+			  <li><img src="img/fs/24.png"><br/>上门按摩</li>	
+			  <li><img src="img/fs/25.png"><br/>汽车服务</li>	
+			  <li><img src="img/fs/26.png"><br/>宠物服务</li>	
+			</ul>
+			</div>
+		</div>
+		<div class="tabs tabs-icon-top tabs-positive tabs-color-light">
+			<div class="tab-item active">
+				<i class="icon ion-home"></i>
+				我的小区
+			</div>
+			<div class="tab-item">
+				<i class="icon ion-android-mail"></i>
+				红包专区
+			</div>
+			<div class="tab-item">
+				<i class="icon ion-coffee"></i>
+				小区便民
+			</div>
+			<div class="tab-item">
+				<i class="icon ion-aperture"></i>
+				小区商圈
+			</div>
+			<div class="tab-item">
+				<i class="icon ion-person"></i>
+				我的小家
+			</div>
+		</div>
+</ion-view>
+
+

@@ -1,0 +1,15 @@
+<div ng-controller="myHome">
+		<div class="bar bar-header bar-positive">
+			<button class="button button-clear" ng-click="back()">
+				<i class="icon ion-ios-arrow-back" ></i>
+			</button>
+			<div class="title">位置</div>
+		</div>
+		<ion-content class="has-header">
+			<div class="list" ng-repeat="item in homeList">
+				
+				<div class="item" ng-repeat="home in item.homes" ng-click="goShow(home)">{{home}}</div>
+			</div>
+		</ion-content>
+
+	</div>	

@@ -1,0 +1,37 @@
+
+		
+	<link rel="stylesheet" type="text/css" href="lib/css/show.css"/>
+	<div ng-controller="show">
+		<div class="bar bar-header bar-positive">
+			<button class="button button-clear" ng-click="back()">
+				<i class="icon ion-ios-arrow-back"></i>
+		</button>
+			<h1 class="title">个人中心</h1>
+		</div>
+		
+		<div class="content has-header">
+			<div class="box">
+				<img src="img/zy/1.png" style="width:50px ;height: 50px;" /><br />
+				<p class="text" style="padding-top:4px">一米阳光</p>
+				<p class="text">15638816863</p>
+			</div>
+		</div>
+			<div class="list">
+				<a class="item item-icon-right" href="#/choose">
+					i的社区
+                     <span style="float: right;">{{area}}</span>
+					<i class="icon ion-ios-arrow-forward my-color"></i>
+				</a>
+			</div>
+
+			<ul class="list padding">
+				<a href="#/change"><li><img src="img/zy/2.png" alt="" /><br /><span>个人资料</span></li></a>
+				<li><a href="#/imoney"><img src="img/zy/3.png" alt="" /><br /><span>i的钱包</span></a></li>
+				<li><a href="#/iorder"><img src="img/zy/4.png" alt="" /><br /><span>i的订单</span></a></li>
+				<li><a href="#/winrecord"><img src="img/zy/5.png" alt="" /><br /><span>i的中奖纪录</span></a></li>
+				<li><a href="#/lifehelp"><img src="img/zy/6.png" alt="" /><br /><span>i的生活助理</span></a></li>
+				<li><a href="#/pwd"><img src="img/zy/7.png" alt="" /><br /><span>设置</span></a></li>
+				<li><a href="#/village"><img src="img/zy/8.png" alt="" /><br /><span>i的评价</span></a></li>
+				<li><a href="#/idecide"><img src="img/zy/9.png" alt="" /><br /><span>i的家i做主</span></a></li>
+			</ul>
+</div>

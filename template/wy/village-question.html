@@ -1,0 +1,62 @@
+   
+<style>
+ 	/*提问*/
+			.village-question-content{
+				margin-top: 10px;
+				height: 600px;
+			}
+			.loading-container .loading{
+				position: fixed;
+				top: 43px;
+				width: 100%;
+				background-color: rgba(200,80,0,.7);
+			}
+ </style>
+    
+        <div class="bar bar-header bar-positive">
+        <button class="button button-clear" ng-click="back()">
+            <i class="icon ion-ios-arrow-back"></i>
+        </button>
+        <h1 class="title">小区问问</h1>
+    </div>
+    <div class="content has-header has-footer village-question-content">
+        <div class="list">
+            <a class="item item-thumbnail-left">
+                <img src="img/wy/14.fw.png">
+                <p>蓝胖子</p>
+                <h2>小区附近那家饭好吃</h2>
+                <p style="text-align: right">回答2&nbsp;<img src="img/wy/11.fw.png" alt=""></p>
+            </a>
+            <a class="item item-thumbnail-left">
+                <img src="img/wy/14.fw.png">
+                <p>隔壁的小明</p>
+                <h2>小区附近那家饭好吃</h2>
+                <p style="text-align: right"><button>回复</button></p>
+            </a>
+            <a class="item item-thumbnail-left" >
+                <img src="img/wy/14.fw.png">
+                <p>Ana小娜</p>
+                <h2>小区附近那家饭好吃</h2>
+                <p style="text-align: right"><button>回复</button></p>
+            </a>
+            <a class="item item-thumbnail-left">
+                <img src="img/wy/14.fw.png">
+                <p>Ana小娜</p>
+                <h2>{{comments}}</h2>
+                <p style="text-align: right"><button>回复</button></p>
+            </a>
+        </div>
+    </div>
+    <div class="bar bar-footer" style="height: 67px;">
+        <div class="list" style="margin: 0 auto">
+            <div class="item item-input-inset">
+                <label class="item-input-wrapper">
+                    <textarea name="" id="" class="commentArea" ng-model="currentQuestion.comment"></textarea>
+                </label>
+                <button class="button button-small" ng-click="comment()">
+                    发表
+                </button>
+            </div>
+        </div>
+    </div>
+

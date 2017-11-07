@@ -1,0 +1,14 @@
+<div ng-controller="myCitys">
+		<div class="bar bar-header bar-positive">
+			<button class="button button-clear" ng-click="back()">
+				<i class="icon ion-ios-arrow-back" ></i>
+			</button>
+			<div class="title">城市</div>
+		</div>
+		<ion-content class="has-header">
+			<div class="list" ng-repeat="item in cityList">
+				
+				<div class="item" ng-repeat="city in item.citys" ng-click="goArea()">{{city}}</div>
+			</div>
+		</ion-content>
+</div>

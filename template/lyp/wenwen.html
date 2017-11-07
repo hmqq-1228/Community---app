@@ -1,0 +1,67 @@
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <style>
+        .red{
+            color: #296FE9;
+        }
+        .pointer:hover{
+            color: #296FE9;
+            cursor: pointer;
+        }
+        .s-1{
+            float: right;
+        }
+        .table-bordered>tbody>tr>td, .table-bordered>tbody>tr>th, .table-bordered>tfoot>tr>td, .table-bordered>tfoot>tr>th,
+        .table-bordered>thead>tr>td, .table-bordered>thead>tr>th
+        {
+            border: 0;
+            padding-top: 20px;
+            padding-bottom: 0px;
+            margin-bottom: 0px;
+        }
+        .table-bordered{
+            border: 0;
+        }
+    </style>
+
+<div ng-controller="myCon2">
+<div class="bar bar-header bar-positive">
+    <button class="button button-clear icon ion-ios-arrow-back" ng-click="back()"></button>
+    <h1 class="title">内容详情</h1>
+</div>
+<div class="content has-header has-footer scroll-content" style="overflow-y: scroll;">
+    <div class="container">
+        <table class="table table-bordered text-center" border="0">
+            <tr>
+                <!--点击升序和降序-->
+                <td ng-click="title = 'id'; desc = !desc ;myClass = !myClass "
+                    ng-class="{true:'dropup red',false:'dropdown'}[myClass]" class="pointer">
+                    按时间排序<span class="caret"></span></td>
+                <td ng-click="title = 's1'; desc = !desc; myClass2 = !myClass2"
+                    ng-class="{true:'dropup red',false:'dropdown'}[myClass2]" class="pointer">
+                    按心券排序<span class="caret"></span></td>
+            </tr>
+        </table>
+    </div>
+    <!--换成缩略图-->
+    <div class="list">
+        <div class="item item-avatar"
+             ng-repeat="item in items|orderBy:title:desc track by $index" >
+            <img ng-src="{{item.img}}">
+            <p>{{item.name}}<span class="s-1">{{item.s1}}</span></p>
+            <h2>{{item.p1}}</h2>
+            <p>回答{{item.p2}}&nbsp;<i class="icon ion-chatbox-working energized"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;心券{{item.id2}}
+                <i class="icon ion-android-favorite assertive"></i>&nbsp;{{item.id}}</p>
+        </div>
+    </div>
+    <!--换成缩略图-->
+</div>
+<div class="bar bar-footer bar-positive">
+    <a href="#/tiwen"><h1 class="title">
+        <i class="icon ion-ios-compose-outline"></i>
+        我要提问
+    </h1></a>
+</div>
+</div>
+
+

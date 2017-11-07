@@ -1,0 +1,72 @@
+<style>
+			li.item.item-avatar.item-icon-right.item-text-wrap{
+				height: 120px;
+			}
+			li.item.item-divider.text-center{
+				height: 140px;
+			}
+</style>
+<div ng-controller="sharecarCtrl">
+	<!--header部分-->
+		<div class="bar bar-header bar-positive">
+			<button class="button button-clear" ng-click="back()">
+				<i class="icon ion-ios-arrow-left"></i>
+			</button>
+			<h1 class="title">小区拼车</h1>
+		</div>
+		<!--content部分-->
+		<div class="content has-header has-footer  " >
+			<ul class="list">
+			  <li class="item item-avatar item-icon-right item-text-wrap">
+			    <img src="img/fs/1.png">
+			    <p>小星星</p>
+			    <h2>农业路花园路国贸360，有人去吗？</h2>
+			    <p>
+			      <a href="#" class="subdued">今天</a>
+			      <a href="#" class="subdued">10:20</a>
+			    </p>
+			     <span ng-click="showConfirm()"><i class="icon ion-ios-telephone positive"></i></span>
+			  </li>
+			   <li class="item item-avatar item-icon-right item-text-wrap">
+			    <img src="img/fs/2.png">
+			    <p>安妮宝贝</p>
+			    <h2>农业路花园路国贸360，有人去吗？</h2>
+			    <p>
+			      <a href="#" class="subdued">今天</a>
+			      <a href="#" class="subdued">11:18</a>
+			    </p>
+			     <i class="icon ion-ios-telephone positive"></i>
+			  </li>
+			   <li class="item item-avatar item-icon-right item-text-wrap">
+			    <img src="img/fs/3.png">
+			    <p>小松鼠</p>
+			    <h2>农业路花园路国贸360，有人去吗？</h2>
+			    <p>
+			      <a href="#" class="subdued">2016-02-18</a>
+			    </p>
+			     <i class="icon ion-ios-telephone positive"></i>
+			  </li>
+			   <li class="item item-avatar item-icon-right item-text-wrap">
+			    <img src="img/fs/4.png">
+			    <p>美人鱼</p>
+			    <h2>农业路花园路国贸360，有人去吗？</h2>
+			    <p>
+			      <a href="#" class="subdued">今天</a>
+			      <a href="#" class="subdued">2016-01-01</a>
+			    </p>
+			     <i class="icon ion-ios-telephone positive"></i>
+			  </li>
+			  <li class="item item-divider text-center  ">
+			    
+			    <p>加载更多</p>
+			    
+			  </li>
+			</ul>
+		</div>
+		<div class="bar bar-footer bar-positive">
+			<h2 class="title">
+				<a href="#/carpublish"><i class="icon ion-ios-list-outline"></i>
+				我要发布</a></h2>
+		</div>
+		
+</div>

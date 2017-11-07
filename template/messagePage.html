@@ -1,0 +1,24 @@
+<div>
+    <div class="bar bar-header bar-positive">
+        <button class="button icon ion-ios-arrow-back" ng-click="back()"></button>
+        <div class="title">我要发布</div>
+    </div>
+    <ion-content class="has-header">
+        <div class="list">
+            <a href="#/list" class="item item-icon-right">
+                选择分类
+                <span class="item-note">请选择</span>
+                <i class="icon ion-ios-arrow-forward"></i>
+            </a>
+            <label class="item item-input  item-stacked-label">
+                <span class="input-label">内容</span>
+                <textarea rows="5" placeholder="请输入内容"></textarea>
+            </label>
+        </div>
+        <div class="padding">
+            <button class="button button-block button-energized"
+                    ng-click="showAlert()">确认</button>
+        </div>
+    </ion-content>
+
+</div>

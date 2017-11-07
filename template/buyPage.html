@@ -1,0 +1,115 @@
+<style>
+	.row{
+		margin-left:0;
+	}
+	/*.buy{
+		width:42px;
+		height:40px
+	}*/
+	
+</style>
+<ion-view>
+    <div class="bar bar-header bar-positive">
+        <button class="button button-clear icon ion-ios-arrow-back"
+            ng-click="back()"></button>
+        <h1 class="title">小区商圈</h1>
+    </div>
+    <ion-content class="has-header has-tabs">
+        <img class="full-image" src="img/chj01.jpg" alt="">
+        <div class="row text-center">
+            <a class="col" href="#/clothes">
+                <img src="img/chj02.jpg" alt="" class="buy">
+                <p>衣</p>
+            </a>
+            <div class="col" ng-click="goState('fooddetail',null)">
+                <img src="img/chj03.jpg" alt="" class="buy">
+                <p>食</p>
+            </div>
+            <div class="col">
+                <img src="img/chj04.jpg" alt="" class="buy">
+                <p>住</p>
+            </div>
+            <div class="col">
+                <img src="img/chj05.jpg" alt="" class="buy">
+                <p>行</p>
+            </div>
+            <div class="col">
+                <img src="img/chj06.jpg" alt="" class="buy">
+                <p>娱</p>
+            </div>
+        </div>
+        <div class="row text-center">
+            <div class="col" ng-click="goState('check',null)">
+                <img src="img/chj07.jpg" alt="" class="buy">
+                <p>用</p>
+            </div>
+            <div class="col">
+                <img src="img/chj08.jpg" alt="" class="buy">
+                <p>健</p>
+            </div>
+            <div class="col">
+                <img src="img/chj09.jpg" alt="" class="buy">
+                <p>事</p>
+            </div>
+            <div class="col">
+                <img src="img/chj10.jpg" alt="" class="buy">
+                <p>教</p>
+            </div>
+            <div class="col">
+                <img src="img/chj11.jpg" alt="" class="buy">
+                <p>安</p>
+            </div>
+        </div>
+        <div class="list">
+            <div class="item item-divider"></div>
+            <div class="item">
+                <span>鸡毛信专属服务</span>
+                <a href="#/message" class="assertive item-note">
+                    我要发信息
+                    <i class="icon ion-compose assertive"></i>
+                </a>
+            </div>
+            <div class="item item-divider"></div>
+            <div class="item">
+                <span class="positive">"享i所悦"小区商城</span>
+                <a href="#/more" class="item-note">更多</a>
+            </div>
+        </div>
+        <div class="row text-center">
+            <div class="col">
+                <img class="full-image" src="img/chj12.jpg" alt="">
+                <p>法国葡萄酒</p>
+            </div>
+            <div class="col">
+                <img class="full-image" src="img/chj13.jpg" alt="">
+                <p>香氛系列</p>
+            </div>
+            <div class="col">
+                <img class="full-image" src="img/chj14.jpg" alt="">
+                <p>苹果手表iWatch</p>
+            </div>
+        </div>
+        <div class="list">
+            <div class="item item-divider"></div>
+            <div class="item">
+                <span class="positive">"享我所想"专属服务</span>
+                <a href="#/message" class="assertive item-note">
+                    我要发信息
+                    <i class="icon ion-compose assertive"></i>
+                </a>
+            </div>
+            <div class="item item-divider"></div>
+            <div class="item">
+                <span class="positive">i好运抽奖</span>
+                <span class="item-note">更多</span>
+            </div>
+            <div class="item item-thumbnail-left">
+                <img src="img/chj15.jpg" alt="">
+                <h3>苹果手机iphone6s 64g 玫瑰金</h3>
+                <p>价格：5888元</p>
+                <p class="positive">每次参与所需i心劵5个</p>
+                <button class="button button-small button-energized">我要参与</button>
+            </div>
+        </div>
+    </ion-content>
+</ion-view>
